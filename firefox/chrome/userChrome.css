@@ -99,6 +99,7 @@
   overflow-y: scroll;
 }
 
+/* hide some context menu options */
 #context-navigation,
 #context-sep-navigation,
 #context-pocket,
