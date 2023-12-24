@@ -243,19 +243,14 @@ user_pref("layout.word_select.eat_space_to_next_word", false);
 // visit https://github.com/yokoffing/Betterfox/wiki/Common-Overrides
 // visit https://github.com/yokoffing/Betterfox/wiki/Optional-Hardening
 // Enter your personal overrides below this line:
-// PREF: restore login manager
-user_pref("signon.rememberSignons", true);
-
-// PREF: restore address and credit card manager
-user_pref("extensions.formautofill.addresses.enabled", true);
-user_pref("extensions.formautofill.creditCards.enabled", true);
-
 // PREF: allow websites to ask you for your location
 user_pref("permissions.default.geo", 0);
 
 // PREF: allow websites to ask you to receive site notifications
 user_pref("permissions.default.desktop-notification", 0);
 
+// PREF: enable GPU-accelerated Canvas2D [WINDOWS]
+user_pref("gfx.canvas.accelerated", true);
 /****************************************************************************
  * SECTION: SMOOTHFOX                                                       *
 ****************************************************************************/
