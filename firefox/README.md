@@ -9,7 +9,7 @@ These custom settings assume the [Iosevka font](https://github.com/be5invis/Iose
 - Open your currently active profile folder: go to `about:profiles`, locate currently in use profile and click **Open Folder** in the **Root Directory** section
 - Create a new folder named `chrome` in this directory (if not already exist).
 - Download or copy the contents from the file `chrome/userChrome.css` in this repository into a new file named `userChrome.css` within the `chrome` folder.
->‼️For `MacOS` users, use the file `chrome/userChrome-MacOS.css` instead. This file fixes the control buttons overlapping issue.
+  - ‼️For `MacOS` users, use the file `chrome/userChrome-MacOS.css` instead. This file fixes the control buttons overlapping issue.
 - In address bar,  type`about:config` and press **Enter**. Click the button accepting the risk.
 
 ## 2. Custom `user.js`
