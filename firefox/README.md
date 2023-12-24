@@ -6,7 +6,7 @@ These custom settings assume the [Iosevka font](https://github.com/be5invis/Iose
 #  Installation
 ## 1. Custom CSS
 - Have [Firefox](https://www.mozilla.org/en-US/firefox/new/) installed.
-- Open your currently active profile folder: go to `about:profiles`, locate currently active profile and click **Open Folder** in the **Root Directory** section
+- Open your currently active profile folder: go to `about:profiles`, locate currently in use profile and click **Open Folder** in the **Root Directory** section
 - Create a new folder named `chrome` in this directory (if not already exist).
 - Download or copy the contents from the file `chrome/userChrome.css` in this repository into a new file named `userChrome.css` within the `chrome` folder.
 - In address bar,  type`about:config` and press **Enter**. Click the button accepting the risk.
