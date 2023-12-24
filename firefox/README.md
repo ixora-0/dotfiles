@@ -11,7 +11,7 @@ These custom settings assume the [Iosevka font](https://github.com/be5invis/Iose
 - Copy the contents from the file `chrome/userChrome.css` into a new file named `userChrome.css` within the `chrome` folder.
 - In address bar,  type`about:config` and press **Enter**. Click the button accepting the risk.
 
-## 2. Custom user.js
+## 2. Custom `user.js`
 This uses [Betterfox](https://github.com/yokoffing/Betterfox) with some overrides. To install, go to profile's root directory like earlier and copy or download and move file `user.js` into the folder.
 >‼️This is an an opinionated preference list, see [here](https://github.com/yokoffing/Betterfox/wiki/Common-Overrides) for common adjustments. 
 
