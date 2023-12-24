@@ -10,8 +10,7 @@ These custom settings assume the [Iosevka font](https://github.com/be5invis/Iose
 - Create a new folder named `chrome` in this directory (if not already exist).
 - Download or copy the contents from the file `chrome/userChrome.css` in this repository into a new file named `userChrome.css` within the `chrome` folder.
   - ‼️For `MacOS` users, use the file `chrome/userChrome-MacOS.css` instead. This file fixes the control buttons overlapping issue. Make sure to rename it to `userChrome.css` if you are downloading the file.
-- In address bar,  type`about:config` and press **Enter**. Click the button accepting the risk.
-
+- In address bar,  type`about:config` search `toolkit.legacyUserProfileCustomizations.stylesheets` and double-click the field to set it to  **true**. This is required to load the custom CSS in Firefox.
 ## 2. Custom `user.js`
 This uses [Betterfox](https://github.com/yokoffing/Betterfox) with some overrides. To install, go to profile's root directory like earlier and copy or download the file `user.js` in this repository into the folder.
 >‼️This is an an opinionated preference list, see [here](https://github.com/yokoffing/Betterfox/wiki/Common-Overrides) for common adjustments. 
