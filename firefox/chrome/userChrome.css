@@ -79,13 +79,12 @@
   font-family: Iosevka, system-ui !important;
 }
 
-/* urlbar font and expand styles */
+/* urlbar expand styles */
 #urlbar>.urlbarView {
   transition: max-height 300ms ease, opacity 300ms ease !important;
   opacity: 100%;
   max-height: 450px;
 }
-
 #urlbar:not([open])>.urlbarView,
 #urlbar:not([breakout])>.urlbarView {
   display: block !important;
