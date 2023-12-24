@@ -1,0 +1,50 @@
+/* fonts (must have Iosevka installed) */
+#root.root {--tabs-font: 1rem Iosevka;}
+#root.root {--ctx-menu-font: 1rem Iosevka;}
+#root.root {--ctx-menu-min-width: 256px;}
+#root.root {--ctx-menu-max-width: 9999px;}
+
+/* color adjustments (need to modify colors depending on theme) */
+#root.root {--tabs-normal-fg: white;}
+#root.root {--toolbar-bg: rgb(0,0,0);}
+#root.root {--tabs-activated-shadow: 0 2px 2px rgba(255,255,255,0.25), 0 -2px 2px rgba(255,255,255,0.25), inset 0 0 0 1px rgba(255,255,255,0.25);} /* doesn't work if tab-colorization is on */
+
+/* unloaded tab title style */
+.Tab[data-discarded="true"] .title { 
+    opacity: 80%;
+}
+
+/* adjustments */
+#root.root {--tabs-indent: 16px;}
+#root.root {--tabs-audio-btn-width: 32px;}
+#root.root {--tabs-inner-gap: 4px;}
+#root.root {--tabs-margin: 4px;}
+
+/*** hover effects ***/
+#root:not(:hover) {
+    --tabs-indent: 0px;
+}
+/* ident indicator ********************************************/
+/* Settings > Tabs > Show marks to indicate tabs sub-tree levels > on */
+.Tab .title {
+    transition: margin-left 300ms ease;
+} 
+.Tab:hover {
+    --tabs-inner-gap: 8px;
+}
+.Tab:hover .title {
+    margin-left: 8px;
+}
+
+/* no indent indicator - uncomment section below **************/
+/***************************************************************
+#root.root {--tabs-lvl-opacity: 0;}
+.Tab {
+    transition: margin-left 300ms ease;
+} 
+.Tab:hover {
+    --tabs-margin: 6px;
+    margin-left: 8px;
+} 
+***************************************************************/
+
