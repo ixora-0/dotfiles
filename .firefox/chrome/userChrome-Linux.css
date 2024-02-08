@@ -1,0 +1,93 @@
+/* hide tabs bar **********************************************/
+#TabsToolbar {
+  height: 0px;
+}
+
+#main-window[tabsintitlebar="true"]:not([extradragspace="true"]) #TabsToolbar>.toolbar-items {
+  opacity: 0;
+  pointer-events: none;
+}
+
+#main-window:not([tabsintitlebar="true"]) #TabsToolbar {
+  visibility: collapse;
+}
+
+/* sidebery styles ********************************************/
+/* hide header & right border */
+#sidebar-box[sidebarcommand="_3c078156-979c-498b-8990-85f7987dd929_-sidebar-action"]>#sidebar-header,
+#sidebar-box[sidebarcommand="_3c078156-979c-498b-8990-85f7987dd929_-sidebar-action"]>#sidebar-splitter {
+  display: none
+}
+
+/* expands on hover */
+#sidebar-box[sidebarcommand="_3c078156-979c-498b-8990-85f7987dd929_-sidebar-action"] {
+  --sidebar-width: 36px;
+  --sidebar-hover-width: 512px;
+  position: relative;
+  min-width: var(--sidebar-width) !important;
+  width: var(--sidebar-width) !important;
+  max-width: var(--sidebar-width) !important;
+  z-index: 1;
+}
+
+#sidebar-box[sidebarcommand="_3c078156-979c-498b-8990-85f7987dd929_-sidebar-action"]>#sidebar {
+  transition: min-width 300ms ease-in-out !important;
+  min-width: var(--sidebar-width) !important;
+  will-change: min-width;
+}
+
+#sidebar-box[sidebarcommand="_3c078156-979c-498b-8990-85f7987dd929_-sidebar-action"]:hover>#sidebar {
+  min-width: var(--sidebar-hover-width) !important;
+}
+
+/* navbar *****************************************************/
+/* hide back & forward button when disabled */
+#back-button[disabled="true"] {
+  display: none !important
+}
+
+#forward-button[disabled="true"] {
+  display: none !important
+}
+
+#urlbar-input,
+#urlbar>.urlbarView {
+  font-family: monospace, system-ui !important;
+  font-stretch: condensed !important;
+}
+
+/* urlbar expand styles */
+#urlbar>.urlbarView {
+  transition: max-height 300ms ease, opacity 300ms ease !important;
+  opacity: 100%;
+  max-height: 450px;
+}
+
+#urlbar:not([open])>.urlbarView,
+#urlbar:not([breakout])>.urlbarView {
+  display: block !important;
+  opacity: 0%;
+  max-height: 0px;
+}
+
+/* small fix for smaller windows */
+.urlbarView .search-panel-one-offs {
+  flex-wrap: nowrap !important;
+  overflow-y: scroll;
+}
+
+/* hide some context menu options */
+#context-navigation,
+#context-sep-navigation,
+#context-pocket,
+#context-sendpagetodevice,
+#context-sendlinktodevice,
+#context-sendimage,
+#context-take-screenshot,
+#context-sep-screenshots,
+#context-setDesktopBackground,
+#context-sep-setbackground,
+#context-print-selection,
+#context-bookmarklink {
+  display: none !important;
+}
