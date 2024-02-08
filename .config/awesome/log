@@ -1,0 +1,10 @@
+polybar 3.7.1
+
+Features: +alsa +curl +i3 +mpd +network(libnl) +pulseaudio +xkeyboard
+
+X extensions: +randr (+monitors) +composite +xkb +xrm +xcursor
+
+Build type: Release
+Compiler: /usr/bin/c++
+Compiler flags: -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection -Wp,-D_GLIBCXX_ASSERTIONS -g -ffile-prefix-map=/build/polybar/src=/usr/src/debug/polybar -flto=auto -O3 -DNDEBUG -Wall -Wextra -Wpedantic -Wdeprecated-copy-dtor -Wsuggest-override
+Linker flags: -Wl,-O1,--sort-common,--as-needed,-z,relro,-z,now -flto=auto -Wall -Wextra -Wpedantic -Wdeprecated-copy-dtor -Wsuggest-override  -Wall -Wextra -Wpedantic -Wdeprecated-copy-dtor -Wsuggest-override

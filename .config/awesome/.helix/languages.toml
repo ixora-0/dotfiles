@@ -1,0 +1,10 @@
+[[language]]
+name = "lua"
+language-servers = ["lua-language-server"]
+
+# don't think this works
+# [language-server.lua-language-server.config.Lua.workspace.library]
+# library = ['/usr/share/awesome/lib']
+
+[language-server.lua-language-server.config.Lua.diagnostics]
+globals = ['awesome', 'client', 'root', "screen", "tag"]

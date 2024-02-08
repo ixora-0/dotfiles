@@ -1,0 +1,8 @@
+[user]
+	email = 39961970+ixora-0@users.noreply.github.com
+	name = ixora-0
+[core]
+	editor = helix
+	autocrlf = input
+[init]
+	defaultBranch = main
