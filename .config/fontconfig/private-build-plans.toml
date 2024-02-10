@@ -1,0 +1,98 @@
+[buildPlans.IosevkaRaven]
+family = "Iosevka Raven"
+spacing = "term"
+serifs = "sans"
+noCvSs = true
+exportGlyphNames = false
+
+  [buildPlans.IosevkaRaven.variants]
+  inherits = "ss14"
+
+    [buildPlans.IosevkaRaven.variants.design]
+    capital-a = "curly-serifless"
+    capital-k = "curly-serifless"
+    capital-r = "curly-serifless"
+    capital-v = "curly-serifless"
+    capital-w = "curly-serifless"
+    capital-x = "curly-serifless"
+    capital-y = "curly-serifless"
+    capital-z = "straight-serifless"
+    i = "serifed-flat-tailed"
+    j = "flat-hook-serifed"
+    k = "curly-serifless"
+    s = "serifless"
+    v = "curly-serifless"
+    w = "curly-serifless"
+    x = "curly-serifless"
+    y = "curly-serifless"
+    zero = "oval-tall-slashed"
+    paren = "flat-arc"
+    brace = "curly"
+    dollar = "open-cap"
+    cent = "open"
+
+    [buildPlans.IosevkaRaven.variants.italic]
+    capital-a = "curly-serifless"
+    capital-k = "curly-serifless"
+    capital-r = "curly-serifless"
+    capital-v = "curly-serifless"
+    capital-w = "curly-serifless"
+    capital-x = "curly-serifless"
+    capital-y = "curly-serifless"
+    capital-z = "cursive-with-crossbar"
+    d = "toothless-rounded-serifless"
+    f = "flat-hook-diagonal-tailed"
+    i = "serifed-diagonal-tailed"
+    j = "diagonal-tailed-serifed"
+    k = "diagonal-tailed-cursive-serifless"
+    l = "serifed-diagonal-tailed"
+    m = "tailed-serifless"
+    n = "tailed-serifless"
+    r = "corner-hooked-top-serifed"
+    s = "unilateral-inward-serifed"
+    t = "diagonal-tailed"
+    u = "toothed-serifless"
+    v = "cursive-serifless"
+    x = "cursive"
+    y = "cursive-serifless"
+    z = "cursive-with-crossbar"
+    asterisk = "penta-low"
+    dollar = "open"
+
+  [buildPlans.IosevkaRaven.ligations]
+  inherits = "dlig"
+
+[buildPlans.IosevkaRaven.widths.Condensed]
+shape = 500
+menu = 3
+css = "condensed"
+
+[buildPlans.IosevkaRaven.widths.Normal]
+shape = 600
+menu = 5
+css = "normal"
+
+[buildPlans.IosevkaRaven.widths.UltraCondensed]
+shape = 416
+menu = 1
+css = "ultra-condensed"
+
+[buildPlans.IosevkaRaven.widths.ExtraCondensed]
+shape = 456
+menu = 2
+css = "extra-condensed"
+
+[buildPlans.IosevkaRaven.widths.SemiCondensed]
+shape = 548
+menu = 4
+css = "semi-condensed"
+
+[buildPlans.IosevkaRaven.widths.SemiExtended]
+shape = 658
+menu = 6
+css = "semi-expanded"
+
+[buildPlans.IosevkaRaven.widths.Extended]
+shape = 720
+menu = 7
+css = "expanded"
