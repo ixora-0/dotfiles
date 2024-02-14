@@ -41,6 +41,8 @@ end)
 -- }}}
 
 require("bar.init")
+Cyclefocus = require("cyclefocus")
+Cyclefocus.centered = true
 require("mappings.mouse_bindings")
 require("mappings.key_bindings")
 

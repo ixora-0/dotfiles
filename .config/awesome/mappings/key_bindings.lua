@@ -85,15 +85,25 @@ awful.keyboard.append_global_keybindings({
     function() awful.client.focus.byidx(-1) end,
     { description = "focus previous by index", group = "client" }
   ),
+  -- awful.key(
+  --   { User_prefs.modkey }, "Tab",
+  --   function()
+  --     awful.client.focus.history.previous()
+  --     if client.focus then
+  --       client.focus:raise()
+  --     end
+  --   end,
+  --   { description = "go back", group = "client" }
+  -- ),
   awful.key(
-    { User_prefs.modkey }, "Tab",
-    function()
-      awful.client.focus.history.previous()
-      if client.focus then
-        client.focus:raise()
-      end
-    end,
-    { description = "go back", group = "client" }
+    { "Mod1" }, "Tab",
+    function() Cyclefocus.cycle({ modifier = "Alt_L" }) end,
+    { description = "cycle window", group = "client" }
+  ),
+  awful.key(
+    { "Mod1", "Shift" }, "Tab",
+    function() Cyclefocus.cycle({ modifier = "Alt_L" }) end,
+    { description = "cycle window in reverse", group = "client" }
   ),
   awful.key(
     { User_prefs.modkey, "Control" }, "j",

@@ -1,0 +1,3 @@
+[submodule ".config/awesome/cyclefocus"]
+	path = .config/awesome/cyclefocus
+	url = git@github.com:mireq/awesome-cyclefocus.git
