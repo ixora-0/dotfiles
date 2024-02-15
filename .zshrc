@@ -114,7 +114,9 @@ alias zzz="systemctl suspend"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-export PATH=$PATH:/home/ixora/.spicetify
+path+=/home/ixora/.spicetify
+path+=/home/ixora/.local/bin
+# export PATH=
 
 setopt globdots
 # LESSOPEN="/bin/lesspipe.sh %s"; export LESSOPEN
