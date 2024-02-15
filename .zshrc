@@ -106,7 +106,7 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias ls="eza -al --icons"
+alias ls="eza -al --icons=automatic"
 alias hx="helix"
 alias kysnow="shutdown -h now"
 alias zzz="systemctl suspend"
