@@ -123,4 +123,4 @@ setopt globdots
 export LESSOPEN='~/lesspipe.sh %s'
 
 (cat ~/.cache/wal/sequences &)
-
+eval "$(zoxide init --cmd cd zsh)"
